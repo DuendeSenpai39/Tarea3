@@ -22,11 +22,22 @@ public static void main(String[] args) {
         
         pais1.addProvince(provincia1);
         
+        var pais2 = new Pais("Ecuador",1809,24,17.888474);
+        
+        var ciudad2 = new Ciudad("Ambato","Javier Altamirano");
+        
+        var provincia2 = new Provincia("Ambato",ciudad2,489.537);
+        
+        
+        pais2.addProvince(provincia2);
  
         System.out.println(ciudad1.getinfoCiudad());
         System.out.println(provincia1.getinfoProvincia());
         System.out.println(pais1.getinfoPais());
         
+        System.out.println(ciudad2.getinfoCiudad());
+        System.out.println(provincia2.getinfoProvincia());
+        System.out.println(pais2.getinfoPais());
         
     }
 }
